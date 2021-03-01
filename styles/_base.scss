@@ -1,0 +1,56 @@
+//sass base template
+
+//breakpoints
+// $bp-largest: 75em; //1200px
+// $bp-large: 68.75em;
+// $bp-medium: 56.25em;
+// $bp-small: 37.5em; //600px
+// $bp-smaller: 31.25em; //500px
+
+//css vars
+:root {
+  //grid settings for home
+  --sidebar-size: 8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+
+  // @media only screen and (max-width: $bp-large) {
+  // font-size: 50%;
+  // }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-image: ;
+  //min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns:
+    [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
+      8,
+      [col-start] calc(calc(100vw - var(--sidebar-size)) / 8) [col-end]
+    )
+    [center-end];
+}

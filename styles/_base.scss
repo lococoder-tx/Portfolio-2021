@@ -11,6 +11,9 @@
 :root {
   //grid settings for home
   --sidebar-size: 8rem;
+  --color-black: rgba(7, 7, 7, 0.95);
+  --color-grey-dark-1: rgb(27, 27, 27);
+  --color-white: #eee;
 }
 
 * {
@@ -25,6 +28,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
 
@@ -46,7 +50,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 8rem 100vh;
   grid-template-columns:
     [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
       8,

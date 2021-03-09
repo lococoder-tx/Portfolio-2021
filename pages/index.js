@@ -4,7 +4,9 @@ const index = () => {
   return (
     <>
       <Nav></Nav>
-      <div className="container home"></div>
+      <div className="container">
+        <div className="home"></div>
+      </div>
     </>
   );
 };

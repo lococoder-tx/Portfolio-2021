@@ -6,6 +6,7 @@ const Nav = () => {
       <div className="navigation__button">
         <span className="navigation__icon"></span>
       </div>
+      <div className="navigation__bar"></div>
     </div>
   );
 };

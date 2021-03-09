@@ -11,8 +11,13 @@
 :root {
   //grid settings for home
   --sidebar-size: 8rem;
+
+  //darks
   --color-black: rgba(7, 7, 7, 0.95);
+  --color-black-nav-unfocus: rgba(7, 7, 7, 0.75);
   --color-grey-dark-1: rgb(27, 27, 27);
+
+  //lights
   --color-white: #eee;
 }
 
@@ -50,11 +55,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 8rem 100vh;
+  grid-template-rows: 100vh 100vh;
   grid-template-columns:
     [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
-      8,
-      [col-start] calc(calc(100vw - var(--sidebar-size)) / 8) [col-end]
+      9,
+      minmax(min-content, 22rem)
     )
     [center-end];
 }

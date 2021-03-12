@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-const Nav = () => {
+const NavBar = () => {
   const [navBarOn, setNavBarOn] = useState(false);
 
   return (
@@ -14,13 +14,19 @@ const Nav = () => {
       >
         <span className="navigation__icon"></span>
       </div>
+
       <CSSTransition classNames="fade" in={navBarOn} timeout={1000}>
         <>
-          <div className={`navigation__bar`}></div>
+          <ul className="navigation__bar navigation__text">
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
         </>
       </CSSTransition>
     </div>
   );
 };
 
-export default Nav;
+export default NavBar;

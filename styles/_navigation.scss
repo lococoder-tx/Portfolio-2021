@@ -55,11 +55,11 @@
   }
 
   &__bar {
-    opacity: 0;
+    // opacity: 1;
     position: fixed;
     display: flex;
     background-color: var(--color-black-nav-unfocus);
-    width: 5%;
+    // width: 100%;
     height: 8rem;
     //for safe measure
     z-index: 1;

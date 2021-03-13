@@ -19,6 +19,7 @@
 
   //lights
   --color-white: #eee;
+  --color-white-selected: rgb(129, 127, 127);
 }
 
 * {
@@ -43,7 +44,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   line-height: 1.6;
 

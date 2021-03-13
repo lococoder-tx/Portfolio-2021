@@ -1,11 +1,12 @@
-import Nav from '../components/Nav';
+import NavBar from '../components/NavBar';
+import Home from '../components/Home/Home';
 
 const index = () => {
   return (
     <>
-      <Nav></Nav>
+      <NavBar></NavBar>
       <div className="container">
-        <div className="home"></div>
+        <Home></Home>
       </div>
     </>
   );

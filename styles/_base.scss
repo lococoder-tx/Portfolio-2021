@@ -17,9 +17,16 @@
   --color-black-nav-unfocus: rgba(7, 7, 7, 0.75);
   --color-grey-dark-1: rgb(27, 27, 27);
 
+  //shadows
+  --light-shadow: rgba(2, 2, 2, 0.4);
+
   //lights
   --color-white: #eee;
   --color-white-selected: rgb(129, 127, 127);
+  --color-white: #eee;
+
+  --color-primary-light-1: rgba(45, 100, 131, 1);
+  --color-primary-light-2: rgba(12, 42, 59, 1);
 }
 
 * {
@@ -45,7 +52,7 @@ html {
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.6;
 
   // background-size: cover;
@@ -56,7 +63,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh;
   grid-template-columns:
     [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
       9,

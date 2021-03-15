@@ -67,7 +67,7 @@ body {
   grid-template-columns:
     [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
       9,
-      minmax(min-content, 22rem)
+      1fr
     )
     [center-end];
 }

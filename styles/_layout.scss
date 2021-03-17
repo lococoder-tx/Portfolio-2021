@@ -1,5 +1,13 @@
-.home {
+.bg {
   background-image: url(../public/cloud.jpg);
+  grid-row: 1 / -1;
+  grid-column: 1 /-1;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.home {
   background-position: center;
   background-size: cover;
 
@@ -14,10 +22,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  &__blur {
-    filter: blur(3px);
-  }
+.about {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
 }
 
 .social_media_container {

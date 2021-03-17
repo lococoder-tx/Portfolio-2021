@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
@@ -8,10 +8,16 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
+  const homeEl = useRef(null);
+
+  const handleScroll = (e) => {
+    console.log('hello');
+  };
+
   return (
-    <div className="home">
+    <div ref={homeEl} className="home">
       <h1 className="title">Elijah Gaytan</h1>
-      <h6 className="sub-title">Full-Stack Engineer | Linux Enthusiast</h6>
+      <h6 className="sub-title">Full-Stack Engineer | Linux Nerd</h6>
       <ul className="social_media_container">
         <li>
           <a href="https://github.com/chaleay">

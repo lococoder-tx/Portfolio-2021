@@ -63,7 +63,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh 100vh;
   grid-template-columns:
     [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
       9,

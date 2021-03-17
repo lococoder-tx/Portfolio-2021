@@ -27,7 +27,7 @@ const NavBar = ({ children }) => {
           </>
         </CSSTransition>
       </div>
-      <main>{children}</main>
+      {children}
     </>
   );
 };

@@ -1,21 +1,13 @@
-.bg {
-  background-image: url(../public/cloud.jpg);
+.home {
+  background-image: url(../public/rainbow_anime.gif);
   grid-row: 1 / -1;
   grid-column: 1 /-1;
 
-  background-position: center;
+  background-position: 60%;
   background-size: cover;
-}
-
-.home {
-  background-position: center;
-  background-size: cover;
-
   // blur inset
   //box-shadow: 0 0 2px 2px white inset;
   transition: all 0.8s;
-  grid-row: 1 / 2;
-  grid-column: 1 /-1;
 
   //display settings
   display: flex;
@@ -25,8 +17,21 @@
 }
 
 .about {
-  grid-row: 2 / 3;
-  grid-column: 3 / 5;
+  background-image: url(../public/me1.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  grid-row: 1 / -1;
+  grid-column: 1 /-1;
+
+  // img {
+  // display: block;
+  // height: 100vh;
+  // width: 10%;
+  // object-fit: cover;
+  //
+  // filter: blur(3px);
+  // }
 }
 
 .social_media_container {

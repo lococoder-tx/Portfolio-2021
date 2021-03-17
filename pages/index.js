@@ -7,10 +7,10 @@ const index = () => {
   return (
     <>
       <NavBar>
-        <div className="container bg">
+        <div className="container">
           <Home></Home>
-          <About></About>
         </div>
+        {/* <About></About> */}
       </NavBar>
     </>
   );

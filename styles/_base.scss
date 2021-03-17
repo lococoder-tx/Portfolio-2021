@@ -25,8 +25,8 @@
   --color-white-selected: rgb(129, 127, 127);
   --color-white: #eee;
 
-  --color-primary-light-1: rgba(45, 100, 131, 1);
-  --color-primary-light-2: rgba(12, 42, 59, 1);
+  --color-primary-light-1: rgb(111 239 255);
+  --color-primary-light-2: rgb(168 113 240);
 }
 
 * {
@@ -63,11 +63,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
-  grid-template-columns:
-    [sidebar-start] var(--sidebar-size) [sidebar-end center-start] repeat(
-      9,
-      1fr
-    )
-    [center-end];
+  grid-template-rows: repeat((10, minmax(10vh, min-content)));
+  grid-template-columns: repeat(12, 1fr);
 }

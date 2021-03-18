@@ -14,16 +14,83 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  animation: fadeIn 1s ease-in;
 }
 
 .about {
-  background-image: url(../public/me1.jpeg);
+  animation: fadeIn 1s ease-in;
+
+  &__title {
+    animation: fadeIn 1s ease-in;
+    z-index: 5;
+    grid-column: 3/ 4;
+    grid-row: 2 / 3;
+    align-self: end;
+    justify-self: center;
+  }
+  background-image: linear-gradient(
+      to bottom right,
+      var(--color-primary-light-3-gradient),
+      var(--color-primary-light-4-gradient)
+    ),
+    url(../public/me1.jpeg);
+
   background-position: center;
   background-size: cover;
+  opacity: 0.75;
 
   grid-row: 1 / -1;
   grid-column: 1 /-1;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__content_box {
+    animation: fadeIn 1s ease-in;
+    //10 for things that go on top of the background
+    z-index: 10;
+    grid-row: 3 / 9;
+    grid-column: 3 / 11;
+
+    transition: all 0.5s;
+    opacity: 0.7;
+
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    box-shadow: 4px 4px 2rem var(--color-black-box-unfocus);
+
+    padding: 5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+
+    font-family: 'Roboto', Times, serif;
+    font-size: 1.8rem;
+
+    a {
+      color: var(--color-primary-light-2);
+      text-decoration: none;
+
+      &:active,
+      &:hover,
+      &:visited:hover {
+        color: var(--color-primary-light-2-highlight);
+      }
+
+      &:visited {
+        color: var(--color-primary-light-2-visited);
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba($color: #fff, $alpha: 0.9);
+      box-shadow: 4px 4px 2rem var(--color-black-nav-unfocus);
+    }
+  }
   // img {
   // display: block;
   // height: 100vh;

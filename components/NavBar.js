@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import Link from 'next/link';
 
 const NavBar = ({ children }) => {
   const [navBarOn, setNavBarOn] = useState(false);
@@ -19,8 +20,12 @@ const NavBar = ({ children }) => {
         <CSSTransition classNames="fade" in={navBarOn} timeout={1000}>
           <>
             <ul className="navigation__bar navigation__text">
-              <li>Home</li>
-              <li>About</li>
+              <Link href="/">
+                <li>Home</li>
+              </Link>
+              <Link href="/about">
+                <li>About</li>
+              </Link>
               <li>Projects</li>
               <li>Contact</li>
             </ul>

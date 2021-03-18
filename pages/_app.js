@@ -1,8 +1,11 @@
 //fontawesome css dep
 import '@fortawesome/fontawesome-svg-core/styles.css';
-
 import '../styles/main.scss';
+
+//next js comps
 import Head from 'next/head';
+//custom comps
+import NavBar from '../components/NavBar';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,7 +17,9 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <NavBar>
+        <Component {...pageProps} />
+      </NavBar>
     </>
   );
 }

@@ -14,6 +14,7 @@
 
   //darks
   --color-black: rgba(7, 7, 7, 0.95);
+  --color-black-box-unfocus: rgba(7, 7, 7, 0.2);
   --color-black-nav-unfocus: rgba(7, 7, 7, 0.75);
   --color-grey-dark-1: rgb(27, 27, 27);
 
@@ -25,8 +26,14 @@
   --color-white-selected: rgb(129, 127, 127);
   --color-white: #eee;
 
-  --color-primary-light-1: rgb(111 239 255);
-  --color-primary-light-2: rgb(168 113 240);
+  --color-primary-light-1: rgba(111, 239, 255);
+  --color-primary-light-2: rgba(168, 113, 240);
+  --color-primary-light-2-highlight: rgb(205, 182, 228);
+  --color-primary-light-2-visited: rgb(87, 59, 122);
+
+  --color-primary-light-3-gradient: rgba(24, 41, 74, 0.75);
+  --color-primary-light-4-gradient: rgba(74, 115, 174, 0.75);
+  --color-primary-light-3: rgb(25, 49, 74);
 }
 
 * {

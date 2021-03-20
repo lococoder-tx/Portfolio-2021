@@ -1,10 +1,11 @@
 import React from 'react';
+import ProjectCard from '../components/Projects/ProjectCard';
 
 const projects = () => {
   return (
     <main className="container">
       <section className="projects">
-        <div className="projects__card"></div>
+        <ProjectCard></ProjectCard>
       </section>
     </main>
   );

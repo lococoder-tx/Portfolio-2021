@@ -36,14 +36,11 @@ $bp-large: 68.75em; //1100
   --color-primary-light-3: rgb(25, 49, 74);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 

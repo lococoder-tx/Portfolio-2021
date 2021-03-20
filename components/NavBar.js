@@ -26,7 +26,9 @@ const NavBar = ({ children }) => {
               <Link href="/about">
                 <li>About</li>
               </Link>
-              <li>Projects</li>
+              <Link href="/projects">
+                <li>Projects</li>
+              </Link>
               <li>Contact</li>
             </ul>
           </>

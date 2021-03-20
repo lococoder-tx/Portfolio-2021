@@ -6,13 +6,10 @@ import {
   faTwitter,
   faSoundcloud,
 } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   const homeEl = useRef(null);
-
-  const handleScroll = (e) => {
-    console.log('hello');
-  };
 
   return (
     <div ref={homeEl} className="home">
@@ -42,6 +39,12 @@ const Home = () => {
             <FontAwesomeIcon icon={faSoundcloud} size="1x"></FontAwesomeIcon>
           </a>
           <p className="modified-pos">Soundcloud</p>
+        </li>
+        <li>
+          <a href="resume.pdf">
+            <FontAwesomeIcon icon={faFile} size="1x"></FontAwesomeIcon>
+          </a>
+          <p className="modified-pos">Resume</p>
         </li>
       </ul>
     </div>

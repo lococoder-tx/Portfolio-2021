@@ -21,14 +21,6 @@
 .about {
   animation: fadeIn 1s ease-in;
 
-  &__title {
-    animation: fadeIn 1s ease-in;
-    z-index: 5;
-    grid-column: 3/ 4;
-    grid-row: 2 / 3;
-    align-self: end;
-    justify-self: center;
-  }
   background-image: linear-gradient(
       to bottom right,
       var(--color-primary-light-3-gradient),
@@ -38,7 +30,8 @@
 
   background-position: center;
   background-size: cover;
-  opacity: 0.75;
+
+  opacity: 0.9;
 
   grid-row: 1 / -1;
   grid-column: 1 /-1;
@@ -48,17 +41,27 @@
   justify-content: center;
   align-items: center;
 
+  &__title {
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    z-index: 5;
+    grid-column: 3/ 4;
+    grid-row: 2 / 3;
+    align-self: end;
+    justify-self: center;
+    opacity: 0;
+  }
+
   &__content_box {
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in-out 1s forwards;
     //10 for things that go on top of the background
     z-index: 10;
     grid-row: 3 / 9;
     grid-column: 3 / 11;
 
     transition: all 0.5s;
-    opacity: 0.7;
+    opacity: 0;
 
-    background-color: rgba($color: #fff, $alpha: 0.8);
+    background-color: rgba($color: #fff, $alpha: 0.7);
     box-shadow: 4px 4px 2rem var(--color-black-box-unfocus);
 
     padding: 5rem 5rem;
@@ -86,8 +89,8 @@
     }
 
     &:hover {
-      opacity: 1;
-      background-color: rgba($color: #fff, $alpha: 0.9);
+      //adjusting the alphas here on hover
+      background-color: rgba($color: #fff, $alpha: 1);
       box-shadow: 4px 4px 2rem var(--color-black-nav-unfocus);
     }
   }
@@ -109,6 +112,7 @@
 
   margin-top: 2rem;
   display: flex;
+  align-items: center;
   list-style-type: none;
 
   li {

@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Document, Page } from 'react-pdf';
 
 const About = () => {
+  // const [timer, setTimer] = useState(3);
+  //
+  // useEffect(() => {
+  // let countdown = setTimeout(() => {
+  // setTimer(0);
+  // }, 3000);
+  //
+  // return () => {
+  // clearTimeout(countdown);
+  // };
+  // }, []);
+  //
   return (
     <>
       <div className="about"></div>
+
       <h1 className="about__title">About</h1>
       <main className="about__content_box">
         <h3 className="margin-bottom-md">
@@ -36,16 +49,15 @@ const About = () => {
           User, running my own personal Fedora 33 installation, as well as my
           own private server with Debian.
         </p>
-
-        <p>
+        <p className="margin-bottom-md">
           In my free time, I'm an avid musician, guitarist, and all-around music
           nerd. I also love to go the gym, lift weights, and grow my body and
           mind.
         </p>
+        <p>
+          For a copy of my resume please click <a href="resume.pdf">here.</a>
+        </p>
       </main>
-      {/* <Document file="public/resume.pdf">
-        <Page pageNumber={1}></Page>
-      </Document> */}
     </>
   );
 };

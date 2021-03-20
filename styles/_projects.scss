@@ -1,0 +1,12 @@
+.projects {
+  grid-row: 3 / 10;
+  grid-column: 3 / 11;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

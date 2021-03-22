@@ -6,6 +6,8 @@ const projects = () => {
     <main className="container">
       <section className="projects">
         <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
       </section>
     </main>
   );

@@ -4,6 +4,7 @@ import ProjectCard from '../components/Projects/ProjectCard';
 const projects = () => {
   return (
     <main className="container">
+      <h1 className="project-page-title">Projects</h1>
       <section className="projects">
         <ProjectCard
           imageSrc="/valhalla.png"

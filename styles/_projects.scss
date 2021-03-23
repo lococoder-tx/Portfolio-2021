@@ -1,4 +1,16 @@
+.project-page-title {
+  grid-row: 2 / 3;
+  grid-column: 3 / 11;
+  justify-self: center;
+
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 2px 2px 4px var(--color-black-box-unfocus);
+}
+
 .projects {
+  font-family: 'Roboto', sans-serif;
   grid-row: 3 / 10;
   grid-column: 3 / 11;
 

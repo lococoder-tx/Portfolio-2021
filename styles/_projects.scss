@@ -9,9 +9,19 @@
 
   //TODO: add media query on smaller sizes
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
   grid-auto-rows: max-content;
 
   &__card {
+    position: relative;
+
     border: 1px solid var(--color-black-box-unfocus);
     box-shadow: 0px 1px 3px var(--color-black);
 
@@ -33,29 +43,69 @@
       // width: 100% !important;
       grid-column: 1 / -1;
       grid-row: 1 / span 1;
+      height: 35rem;
 
+      border-bottom: 1px solid black;
       div {
         height: 100%;
         // width: 100%;
+
+        img {
+          display: block;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__info {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      z-index: 10;
+      align-self: end;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        color: #fff;
       }
     }
 
     &__header {
       // height: 100%;
       // align-self: flex-end;
-      justify-self: center;
-      align-self: end;
-      padding: 1rem;
 
+      padding: 1rem;
       font-size: 2rem;
       text-align: center;
-
       background-color: var(--color-black);
-      color: #fff;
+      transition: 0.3s all;
+      border-radius: 0.8rem;
 
-      z-index: 10;
-      grid-column: 1 / -1;
-      grid-row: 1 /2;
+      &:hover {
+        background-color: var(--color-white-btn-selected);
+      }
+    }
+
+    &__source {
+      // height: 100%;
+      // align-self: flex-end;
+
+      margin-right: 2px;
+      border-radius: 0.8rem;
+      padding: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      background-color: rgba(76, 197, 106, 1);
+      transition: 0.3s all;
+
+      &:hover {
+        background-color: rgba(122, 241, 152, 1);
+      }
     }
 
     &__desc {
@@ -63,7 +113,7 @@
       font-weight: 400;
       grid-column: 1 / span 2;
       text-align: center;
-      font-size: 2em;
+      font-size: 2rem;
     }
   }
 }

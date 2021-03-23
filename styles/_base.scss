@@ -2,9 +2,10 @@
 
 //breakpoints
 // $bp-largest: 75em; //1200px
+$bp-largest: 96.875em;
 $bp-large: 68.75em; //1100
 // $bp-medium: 56.25em;
-// $bp-small: 37.5em; //600px
+$bp-small: 37.5em; //600px
 // $bp-smaller: 31.25em; //500px
 
 //css vars
@@ -17,6 +18,7 @@ $bp-large: 68.75em; //1100
   --color-black-box-unfocus: rgba(7, 7, 7, 0.2);
   --color-black-nav-unfocus: rgba(7, 7, 7, 0.75);
   --color-grey-dark-1: rgb(27, 27, 27);
+  --color-white-btn-selected: rgb(97, 96, 96);
 
   //shadows
   --light-shadow: rgba(2, 2, 2, 0.4);

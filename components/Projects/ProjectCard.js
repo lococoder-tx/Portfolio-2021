@@ -1,18 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ProjectCard = () => {
+const ProjectCard = ({ imageSrc, header, desc, sourceLink, demoLink }) => {
   return (
     <div className="projects__card">
       <div className="projects__card__image">
-        <Image width={1477} height={600} src="/valhalla.png"></Image>
+        <Image width={1477} height={600} src={imageSrc}></Image>
       </div>
-      <h1 className="projects__card__header">Valhalla Marketplace</h1>
+      <div className="projects__card__info">
+        <h2 className="projects__card__source">
+          <a href={sourceLink}>Source</a>
+        </h2>
+        <h1 className="projects__card__header">
+          <a href={demoLink}>{header}</a>
+        </h1>
+      </div>
       <div className="projects__card__desc">
-        <p>
-          A marketplace I created to help small vendors sell their merchandise.
-          Basically, it's eBay.
-        </p>
+        <p>{desc}</p>
       </div>
     </div>
   );

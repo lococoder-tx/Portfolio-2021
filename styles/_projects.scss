@@ -57,6 +57,11 @@
       grid-row: 1 / span 1;
       height: 35rem;
 
+      //make image smaller < 500px
+      @media only screen and (max-width: $bp-smaller) {
+        height: 20rem;
+      }
+
       border-bottom: 1px solid black;
       div {
         height: 100%;
@@ -93,6 +98,10 @@
 
       padding: 1rem;
       font-size: 2rem;
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.7rem;
+      }
+
       text-align: center;
       background-color: var(--color-black);
       transition: 0.3s all;
@@ -103,6 +112,12 @@
       }
     }
 
+    &__no-select {
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
     &__source {
       // height: 100%;
       // align-self: flex-end;
@@ -110,13 +125,18 @@
       margin-right: 2px;
       border-radius: 0.8rem;
       padding: 1rem;
+
       font-size: 2rem;
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.7rem;
+      }
+
       text-align: center;
-      background-color: rgba(76, 197, 106, 1);
+      background-color: rgba(76, 197, 106, 0.95);
       transition: 0.3s all;
 
       &:hover {
-        background-color: rgba(122, 241, 152, 1);
+        background-color: rgba(122, 241, 152, 0.95);
       }
     }
 
@@ -126,6 +146,9 @@
       grid-column: 1 / span 2;
       text-align: center;
       font-size: 2rem;
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

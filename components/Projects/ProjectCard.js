@@ -1,7 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ProjectCard = ({ imageSrc, header, desc, sourceLink, demoLink }) => {
+const ProjectCard = ({
+  imageSrc,
+  header,
+  desc,
+  sourceLink,
+  demoLink,
+  selection,
+}) => {
   return (
     <div className="projects__card">
       <div className="projects__card__image">
@@ -11,8 +18,17 @@ const ProjectCard = ({ imageSrc, header, desc, sourceLink, demoLink }) => {
         <h2 className="projects__card__source">
           <a href={sourceLink}>Source</a>
         </h2>
-        <h1 className="projects__card__header">
-          <a href={demoLink}>{header}</a>
+        <h1
+          className={`projects__card__header ${
+            !selection ? 'projects__card__no-select' : ''
+          } `}
+        >
+          <a
+            className={`${!selection ? 'projects__card__no-select' : ''}`}
+            href={demoLink}
+          >
+            {header}
+          </a>
         </h1>
       </div>
       <div className="projects__card__desc">

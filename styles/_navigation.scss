@@ -3,8 +3,13 @@
     background-color: var(--color-black);
     width: 4rem;
     height: 4rem;
-    top: 1.2rem;
-    left: 1rem;
+    @media only screen and (max-width: $bp-smaller) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    top: 5px;
+    left: 5px;
     position: fixed;
     border-radius: 35%;
     z-index: 101;
@@ -23,6 +28,11 @@
     position: relative;
     margin-top: 1.8rem;
     margin-left: 1rem;
+    @media only screen and (max-width: $bp-smaller) {
+      margin-top: 1.4rem;
+      margin-left: 0.8rem;
+    }
+
     background-color: var(--color-white);
     display: inline-block;
 
@@ -31,6 +41,11 @@
     &::after {
       width: 2rem;
       height: 3px;
+      @media only screen and (max-width: $bp-smaller) {
+        width: 1.5rem;
+        height: 2px;
+      }
+
       background-color: var(--color-white);
       display: inline-block;
     }
@@ -45,10 +60,16 @@
 
     &::before {
       top: -0.9rem;
+      @media only screen and (max-width: $bp-smaller) {
+        top: -0.7rem;
+      }
     }
 
     &::after {
       top: 0.9rem;
+      @media only screen and (max-width: $bp-smaller) {
+        top: 0.7rem;
+      }
     }
 
     //add rotation for before, after icons
@@ -74,6 +95,11 @@
 
   &__text {
     font-size: 3rem;
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 2rem;
+      justify-content: flex-end;
+    }
+
     justify-content: center;
     align-items: center;
     list-style: none;

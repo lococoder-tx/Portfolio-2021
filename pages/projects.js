@@ -3,10 +3,11 @@ import ProjectCard from '../components/Projects/ProjectCard';
 
 const projects = () => {
   return (
-    <main className="container">
+    <main className="container container__fadeIn">
       <h1 className="project-page-title">Projects</h1>
       <section className="projects">
         <ProjectCard
+          number={1}
           selection
           imageSrc="/valhalla.png"
           header="Valhalla Project"
@@ -15,6 +16,7 @@ const projects = () => {
           demoLink="https://valhallaapp.herokuapp.com/"
         ></ProjectCard>
         <ProjectCard
+          number={2}
           selection
           imageSrc="/trillo.png"
           header="Hotel Hero"
@@ -23,6 +25,7 @@ const projects = () => {
           demoLink="https://hotelhero.netlify.app/"
         ></ProjectCard>
         <ProjectCard
+          number={3}
           selection
           imageSrc="/grid-realtor.png"
           header="Grid Realtor"
@@ -31,6 +34,7 @@ const projects = () => {
           demoLink="https://grid-realtor.netlify.app/"
         ></ProjectCard>
         <ProjectCard
+          number={4}
           selection={false}
           imageSrc="/GlobalGameJam.jpg"
           header="Memento"
@@ -38,6 +42,10 @@ const projects = () => {
           desc="A fast-paced 2D platformer created by me and my team for the 2019 Global Game Jam"
           demoLink="#"
         ></ProjectCard>
+        <h2 className="projects__end-text">
+          Find more of my projects on{' '}
+          <a href="https://github.com/chaleay">Github</a>
+        </h2>
       </section>
     </main>
   );

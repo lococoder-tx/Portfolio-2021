@@ -29,7 +29,9 @@ const NavBar = ({ children }) => {
               <Link href="/projects">
                 <li>Projects</li>
               </Link>
-              <li>Contact</li>
+              <Link href="/contact">
+                <li>Contact</li>
+              </Link>
             </ul>
           </>
         </CSSTransition>

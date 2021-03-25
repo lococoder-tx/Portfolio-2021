@@ -8,9 +8,10 @@ const ProjectCard = ({
   sourceLink,
   demoLink,
   selection,
+  number,
 }) => {
   return (
-    <div className="projects__card">
+    <div className={`projects__card projects__card--${number}`}>
       <div className="projects__card__image">
         <Image width={1477} height={600} src={imageSrc}></Image>
       </div>

@@ -1,0 +1,20 @@
+.contact-me {
+  animation: fadeIn ease-in 0.5s;
+
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.8s;
+
+  //font settings
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid var(--color-black);
+
+  &__box {
+  }
+}

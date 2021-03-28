@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Document, Page } from 'react-pdf';
 
 const About = () => {
   // const [timer, setTimer] = useState(3);

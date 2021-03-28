@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import LazyLoad from 'react-lazy-load';
 
 const ProjectCard = ({
   imageSrc,
@@ -13,7 +13,9 @@ const ProjectCard = ({
   return (
     <div className={`projects__card projects__card--${number}`}>
       <div className="projects__card__image">
-        <Image width={1477} height={600} src={imageSrc}></Image>
+        <LazyLoad height={600}>
+          <img src={imageSrc}></img>
+        </LazyLoad>
       </div>
       <div className="projects__card__info">
         <h2 className="projects__card__source">

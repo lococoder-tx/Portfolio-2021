@@ -1,5 +1,5 @@
-import React from 'react';
-import ProjectCard from '../components/Projects/ProjectCard';
+import React from "react";
+import ProjectCard from "../components/Projects/ProjectCard";
 
 const projects = () => {
   return (
@@ -17,6 +17,24 @@ const projects = () => {
         ></ProjectCard>
         <ProjectCard
           number={2}
+          selection={false}
+          imageSrc="/wisp.jpg"
+          header="rE:bUried"
+          sourceLink="https://github.com/chaleay/2019-Global-Game-Jam"
+          desc="You're a ghost buster, and your job is to send those evil souls back to whence they came. Made for the Magic Leap AR Headset."
+          demoLink="#"
+        ></ProjectCard>
+        <ProjectCard
+          number={3}
+          selection={false}
+          imageSrc="/GlobalGameJam.jpg"
+          header="Memento"
+          sourceLink="https://github.com/chaleay/2019-Global-Game-Jam"
+          desc="Won 2nd place at Global Game Jam 2019. Hunt down your memories as you struggle to remember the person you once were. Made with Unity."
+          demoLink="#"
+        ></ProjectCard>
+        <ProjectCard
+          number={4}
           selection
           imageSrc="/trillo.jpg"
           header="Hotel Hero"
@@ -25,7 +43,7 @@ const projects = () => {
           demoLink="https://hotelhero.netlify.app/"
         ></ProjectCard>
         <ProjectCard
-          number={3}
+          number={5}
           selection
           imageSrc="/grid-realtor.jpg"
           header="Grid Realtor"
@@ -33,17 +51,9 @@ const projects = () => {
           desc="A design template I created for a fake realtor agency. Uses SASS and gridbox."
           demoLink="https://grid-realtor.netlify.app/"
         ></ProjectCard>
-        <ProjectCard
-          number={4}
-          selection={false}
-          imageSrc="/GlobalGameJam.jpg"
-          header="Memento"
-          sourceLink="https://github.com/chaleay/2019-Global-Game-Jam"
-          desc="A fast-paced 2D platformer created by me and my team for the 2019 Global Game Jam"
-          demoLink="#"
-        ></ProjectCard>
+
         <h2 className="projects__end-text">
-          Find more of my projects on{' '}
+          Find more of my projects on{" "}
           <a href="https://github.com/chaleay">Github</a>
         </h2>
       </section>

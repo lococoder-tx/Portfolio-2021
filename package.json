@@ -18,5 +18,8 @@
     "react-lazy-load": "^3.1.13",
     "react-transition-group": "^4.4.1",
     "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import Link from "next/link";
 
 const NavBar = ({ children }) => {
   const [navBarOn, setNavBarOn] = useState(false);

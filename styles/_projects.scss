@@ -10,7 +10,7 @@
 }
 
 .projects {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   grid-row: 3 / 10;
   grid-column: 3 / 11;
 
@@ -39,15 +39,19 @@
     }
 
     &--2 {
-      animation: fadeIn 1s ease-in 1s forwards;
+      animation: fadeIn 1s ease-in 0.5s forwards;
     }
 
     &--3 {
-      animation: fadeIn 1s ease-in 2s forwards;
+      animation: fadeIn 1s ease-in 1s forwards;
     }
 
     &--4 {
-      animation: fadeIn 1s ease-in 3s forwards;
+      animation: fadeIn 1s ease-in 1.5s forwards;
+    }
+
+    &--5 {
+      animation: fadeIn 1s ease-in 2s forwards;
     }
 
     position: relative;

@@ -1,5 +1,5 @@
-import React from 'react';
-import LazyLoad from 'react-lazy-load';
+import React from "react";
+import LazyLoad from "react-lazy-load";
 
 const ProjectCard = ({
   imageSrc,
@@ -23,11 +23,11 @@ const ProjectCard = ({
         </h2>
         <h1
           className={`projects__card__header ${
-            !selection ? 'projects__card__no-select' : ''
-          } `}
+            !selection ? "projects__card__no-select" : ""
+          }`}
         >
           <a
-            className={`${!selection ? 'projects__card__no-select' : ''}`}
+            className={`${!selection ? "projects__card__no-select" : ""}`}
             href={demoLink}
           >
             {header}

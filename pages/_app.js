@@ -16,6 +16,9 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap"
           rel="stylesheet"
         />
+        <title>
+          Elijah Gaytan
+        </title>
       </Head>
       <NavBar>
         <Component {...pageProps} />

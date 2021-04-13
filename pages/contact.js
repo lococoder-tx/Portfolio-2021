@@ -1,12 +1,12 @@
 import React from 'react';
-import SocialMediaContainer from '../components/SocialMediaContainer';
+import ContactContainer from '../components/ContactContainer';
 
 const contact = () => {
   return (
     <main className="container">
       <section className="contact-me">
         <h1>&rarr; Contact Me &larr;</h1>
-        <SocialMediaContainer />
+        <ContactContainer />
       </section>
     </main>
   );

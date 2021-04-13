@@ -16,3 +16,65 @@
   border-bottom: 1px solid var(--color-black);
   text-align: center;
 }
+
+.contact_container {
+  //anim
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 0.4rem;
+  }
+
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+
+  li {
+    font-size: 3.5rem;
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 3rem;
+    }
+    margin-right: 2rem;
+    position: relative;
+
+    &:hover > p {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(140%);
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      // &:hover > * {
+      // transform: translateY(-10%);
+      // }
+    }
+
+    p {
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.6s;
+      //pos
+      position: absolute;
+      left: -30%;
+      top: 30%;
+
+      font-size: 2rem;
+    }
+
+    .modified-pos {
+      //pos
+      position: absolute;
+      left: -55%;
+      top: 30%;
+    }
+  }
+}

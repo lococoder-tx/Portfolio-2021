@@ -52,7 +52,7 @@
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       transition: all 0.3s;
@@ -118,6 +118,15 @@
 
       &:active {
         transform: translateY(2px);
+      }
+
+      // for anchor tags - just in case
+      a,
+      a:link,
+      a:visited {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
       }
     }
   }

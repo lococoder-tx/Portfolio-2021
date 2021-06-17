@@ -32,9 +32,6 @@ const NavBar = ({ children }) => {
               <Link href="/contact">
                 <li>Contact</li>
               </Link>
-              <Link href="https://www.lococoder.com">
-                <li>Blog</li>
-              </Link>
             </ul>
           </>
         </CSSTransition>

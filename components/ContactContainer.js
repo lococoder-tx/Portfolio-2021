@@ -22,18 +22,6 @@ const ContactMediaContainer = () => {
         </a>
         <p>Email</p>
       </li>
-      <li>
-        <a href="/#">
-          <FontAwesomeIcon icon={faDiscord} size="1x"></FontAwesomeIcon>
-        </a>
-        <p>Elijah#9686</p>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/elijahliftsweights/?hl=en">
-          <FontAwesomeIcon icon={faInstagram} size="1x"></FontAwesomeIcon>
-        </a>
-        <p>Instagram</p>
-      </li>
     </ul>
   );
 };

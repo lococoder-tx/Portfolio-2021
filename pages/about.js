@@ -1,9 +1,12 @@
-import React, { useRef } from 'react';
-import About from '../components/About/About';
+import About from "../components/About/About";
+import Head from "next/head";
 
-const index = () => {
+const about = () => {
   return (
     <>
+      <Head>
+        <title>Elijah Gaytan - About</title>
+      </Head>
       <div className="container">
         <About></About>
       </div>
@@ -11,4 +14,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default about;

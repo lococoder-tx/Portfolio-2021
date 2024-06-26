@@ -1,5 +1,4 @@
-import React from "react";
-import LazyLoad from "react-lazy-load";
+import Image from "next/image";
 
 const ProjectCard = ({
   imageSrc,
@@ -13,14 +12,9 @@ const ProjectCard = ({
   return (
     <div className={`projects__card projects__card--${number}`}>
       <div className="projects__card__image">
-        <LazyLoad height={600}>
-          <img src={imageSrc}></img>
-        </LazyLoad>
+        <Image className="" fill src={imageSrc} />
       </div>
       <div className="projects__card__info">
-        <h2 className="projects__card__source">
-          <a href={sourceLink}>Source</a>
-        </h2>
         <h1
           className={`projects__card__header ${
             !selection ? "projects__card__no-select" : ""
@@ -33,6 +27,9 @@ const ProjectCard = ({
             {header}
           </a>
         </h1>
+        <h2 className="projects__card__source">
+          <a href={sourceLink}>Source</a>
+        </h2>
       </div>
       <div className="projects__card__desc">
         <p>{desc}</p>

@@ -13,6 +13,7 @@ $bp-really-small: 19.375em;
 :root {
   //grid settings for home
   --sidebar-size: 8rem;
+  --project-card-border-radius: 26px;
 
   //darks
   --color-black: rgba(7, 7, 7, 0.95);
@@ -58,7 +59,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   line-height: 1.6;
 
@@ -71,5 +72,11 @@ body {
 .container {
   display: grid;
   grid-template-rows: repeat((10, minmax(10vh, min-content)));
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container-projects {
+  display: grid;
+  grid-template-rows: repeat((3, minmax(10vh, min-content))) 5vh;
   grid-template-columns: repeat(12, 1fr);
 }

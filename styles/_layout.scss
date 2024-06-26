@@ -19,6 +19,8 @@
 }
 
 .about {
+  // FOR BG IMAGE DIV ONLY
+
   animation: fadeIn 1s ease-in;
 
   background-image: linear-gradient(
@@ -36,10 +38,23 @@
   grid-row: 1 / -1;
   grid-column: 1 /-1;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  ////////
+
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+
+  &__button {
+    background-color: rgba($color: #0f0e0e, $alpha: 1);
+    color: white;
+    z-index: 10;
+    grid-row: 5 / 6;
+    grid-column: 6 / 8;
+    border-radius: 20px;
+    // width: max-content;
+    height: min-content;
+  }
 
   &__title {
     animation: fadeIn 1s ease-in-out 1s forwards;
@@ -52,16 +67,16 @@
   }
 
   &__content_box {
-    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation: fadeIn 2.5s ease-in-out 1s forwards;
     //10 for things that go on top of the background
     z-index: 10;
-    grid-row: 3 / 9;
-    grid-column: 3 / 11;
+    grid-row: 2 / 10;
+    grid-column: 2 / 12;
 
     transition: all 0.5s;
     opacity: 0;
 
-    background-color: rgba($color: #fff, $alpha: 0.7);
+    background-color: rgba($color: #fff, $alpha: 0.95);
     box-shadow: 4px 4px 2rem var(--color-black-box-unfocus);
 
     padding: 5rem 5rem;
@@ -70,7 +85,7 @@
     flex-direction: column;
     // text-align: center;
 
-    font-family: 'Roboto', Times, serif;
+    font-family: "Roboto", Times, serif;
 
     font-size: 1.8rem;
     @media only screen and (max-width: $bp-smaller) {
@@ -93,11 +108,11 @@
       }
     }
 
-    &:hover {
-      //adjusting the alphas here on hover
-      background-color: rgba($color: #fff, $alpha: 1);
-      box-shadow: 4px 4px 2rem var(--color-black-nav-unfocus);
-    }
+    // &:hover {
+    //   //adjusting the alphas here on hover
+    //   background-color: rgba($color: #fff, $alpha: 1);
+    //   box-shadow: 4px 4px 2rem var(--color-black-nav-unfocus);
+    // }
   }
   // img {
   // display: block;

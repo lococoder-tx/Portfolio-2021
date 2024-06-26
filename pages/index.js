@@ -1,15 +1,14 @@
-import React, { useRef } from 'react';
-import NavBar from '../components/NavBar';
-import Home from '../components/Home/Home';
-import About from '../components/About/About';
+import Home from "../components/Home/Home";
+import Head from "next/head";
 
 const index = () => {
   return (
-    <>
-      <div className="container">
-        <Home></Home>
-      </div>
-    </>
+    <div className="container">
+      <Head>
+        <title>Elijah Gaytan</title>
+      </Head>
+      <Home></Home>
+    </div>
   );
 };
 

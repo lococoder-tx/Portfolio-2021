@@ -8,11 +8,11 @@ const About = () => {
     <>
       <div className="about"></div>
       <main className="about__content_box">
-        <h3 className="margin-bottom-md">
+        <h2 className="margin-bottom-md">
           I'm <span className="colored-text-1">Elijah Gaytan.</span> Of all the
           pages on the internet - you stubmled on this one. In any case, thanks
           for stopping by.
-        </h3>
+        </h2>
         <p className="margin-bottom-md">
           I'm a Software Engineer from Austin, TX. I'm a Full-Stack connoisseur
           who specializes in creating stunning, user-friendly and scalable Web
@@ -62,12 +62,12 @@ const About = () => {
           but that's where my love for working on full-stack projects
           flourished. And the rest is history.
         </p>
-        <p>
+        <h3>
           Nowadays, I spend my days working with startups and local businesses,
           and bringing their visions to life. If this sounds like you - feel
-          free to shoot me a <Link href="/contact">message!</Link> I'm more than
-          happy to chat.
-        </p>
+          free to shoot me a <Link href="/contact">message!</Link> I'd love to
+          learn what you're working on.
+        </h3>
       </main>
     </>
   );

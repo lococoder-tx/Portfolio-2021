@@ -1,7 +1,7 @@
-import ProjectCard from "../components/Projects/ProjectCard";
-import Head from "next/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import ProjectCard from '../components/Projects/ProjectCard'
+import Head from 'next/head'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const projects = () => {
   return (
@@ -10,15 +10,24 @@ const projects = () => {
         <title>Elijah Gaytan - Projects</title>
       </Head>
       <h1 className="project-page-title">
-        Featured{" "}
+        Featured{' '}
         <a href="https://github.com/chaleay">
           <FontAwesomeIcon icon={faGithub} size="1x"></FontAwesomeIcon>
-        </a>{" "}
+        </a>{' '}
         Work
       </h1>
       <section className="projects">
         <ProjectCard
           number={1}
+          selection
+          imageSrc="/myCollegeApps.png"
+          header="myCollegeApps"
+          sourceLink="https://github.com/chaleay/myCollegeApps"
+          desc="myCollegeApps is a next-gen college consulting platform that offers personalized, AI consulting services for students and families."
+          demoLink="https://app.mycollegeapps.org/login"
+        />
+        <ProjectCard
+          number={2}
           selection
           imageSrc="/solace_cms.png"
           header="Solace CMS"
@@ -27,7 +36,7 @@ const projects = () => {
           demoLink="https://cms-solace.netlify.app/"
         ></ProjectCard>
         <ProjectCard
-          number={2}
+          number={3}
           selection
           imageSrc="/solace_site.png"
           header="Solace - Site"
@@ -69,7 +78,7 @@ const projects = () => {
         </h2> */}
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default projects;
+export default projects

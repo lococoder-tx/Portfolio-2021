@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link'
+import { useState } from 'react'
 
 const About = () => {
-  const [seeAbout, setSeeAbout] = useState(false);
+  const [seeAbout, setSeeAbout] = useState(false)
 
   return (
     <>
@@ -10,7 +10,7 @@ const About = () => {
       <main className="about__content_box">
         <h2 className="margin-bottom-md">
           I'm <span className="colored-text-1">Elijah Gaytan.</span> Of all the
-          pages on the internet - you stubmled on this one. In any case, thanks
+          pages on the internet - you stumbled on this one. In any case, thanks
           for stopping by.
         </h2>
         <p className="margin-bottom-md">
@@ -19,27 +19,30 @@ const About = () => {
           Applications.
         </p>
         <p className="margin-bottom-md">
-          My software development journey started with me doing something{" "}
+          My software development journey started with me doing something{' '}
           <a href="https://www.linkedin.com/company/vrdg">
             entirely different.
           </a>
           - game development. I started making games when was 16, and I played
-          around with a lot of different engines, such as{" "}
+          around with a lot of different engines, such as{' '}
           <a href="https://www.rpgmakerweb.com/">RPG Maker</a> and Unity. It was
-          around this time I got introduced by a{" "}
+          around this time I got introduced by a{' '}
           <a href="https://www.linkedin.com/in/claytonvr/">friend</a> to the
           insane reality that is Virtual Reality (pun intended). I got offered a
-          contract to work with the{" "}
+          contract to work with the{' '}
           <a href="https://news.txst.edu/research-and-innovation/2019/first-responders-train-using-virtual-reality.html/">
             city of Austin
-          </a>{" "}
+          </a>{' '}
           on an exciting new simulation, and I joined Texas State's VR Club as a
           founding member.
         </p>
         <p className="margin-bottom-md">
           Our club was wildly successful, and we would go on to host three of
           the largest hackathons at Texas State. We were hands-on with the club
-          until 2020, until...well, you know what happened.
+          until 2020, until...{' '}
+          <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">
+            well, you know what happened.
+          </a>
         </p>
         <p className="margin-bottom-md">
           After I graduated in 2020, I took a break from VR, and ended up
@@ -70,7 +73,7 @@ const About = () => {
         </h3>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

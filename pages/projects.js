@@ -20,6 +20,15 @@ const projects = () => {
         <ProjectCard
           number={1}
           selection
+          imageSrc="/colorfull.png"
+          header="Colorfull"
+          sourceLink="https://github.com/chaleay/colorfull"
+          desc="Colorfull is an AI-powered B2B delivery service that provides affordable, high-quality, and sustainable meals to businesses - all in one delivery."
+          demoLink="https://app.colorfull.ai"
+        />
+        <ProjectCard
+          number={2}
+          selection
           imageSrc="/myCollegeApps.png"
           header="myCollegeApps"
           sourceLink="https://github.com/chaleay/myCollegeApps"
@@ -27,7 +36,7 @@ const projects = () => {
           demoLink="https://app.mycollegeapps.org"
         />
         <ProjectCard
-          number={2}
+          number={3}
           selection
           imageSrc="/solace_cms.png"
           header="Solace CMS"
@@ -36,7 +45,7 @@ const projects = () => {
           demoLink="https://cms-solace.netlify.app/"
         ></ProjectCard>
         <ProjectCard
-          number={3}
+          number={4}
           selection
           imageSrc="/solace_site.png"
           header="Solace - Site"
@@ -45,7 +54,7 @@ const projects = () => {
           demoLink="https://solace-site-demo.vercel.app/"
         ></ProjectCard>
         <ProjectCard
-          number={4}
+          number={5}
           selection
           imageSrc="/trillo.jpg"
           header="Hotel Hero"
@@ -54,7 +63,7 @@ const projects = () => {
           demoLink="https://hotelhero.netlify.app/"
         ></ProjectCard>
         <ProjectCard
-          number={5}
+          number={6}
           selection
           imageSrc="/grid-realtor.jpg"
           header="Grid Realtor"

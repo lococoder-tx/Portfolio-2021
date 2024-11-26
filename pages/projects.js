@@ -24,7 +24,7 @@ const projects = () => {
           header="myCollegeApps"
           sourceLink="https://github.com/chaleay/myCollegeApps"
           desc="myCollegeApps is a next-gen college consulting platform that offers personalized, AI consulting services for students and families."
-          demoLink="https://app.mycollegeapps.org/login"
+          demoLink="https://app.mycollegeapps.org"
         />
         <ProjectCard
           number={2}

@@ -22,7 +22,7 @@ const projects = () => {
           selection
           imageSrc="/colorfull.png"
           header="Colorfull"
-          sourceLink="https://github.com/chaleay/colorfull"
+          sourceLink="https://github.com/colorfull-ai/colorfull"
           desc="Colorfull is an AI-powered B2B delivery service that provides affordable, high-quality, and sustainable meals to businesses - all in one delivery."
           demoLink="https://app.colorfull.ai"
         />

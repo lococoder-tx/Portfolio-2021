@@ -1,18 +1,18 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faLinkedinIn,
   faTwitter,
   faSoundcloud,
-} from '@fortawesome/free-brands-svg-icons';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 const SocialMediaContainer = () => {
   return (
     <ul className="social_media_container">
       <li>
-        <a href="https://github.com/chaleay">
+        <a href="https://github.com/lococoder-tx">
           <FontAwesomeIcon icon={faGithub} size="1x"></FontAwesomeIcon>
         </a>
         <p>Github</p>
@@ -30,7 +30,7 @@ const SocialMediaContainer = () => {
         <p className="modified-pos">Resume</p>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default SocialMediaContainer;
+export default SocialMediaContainer

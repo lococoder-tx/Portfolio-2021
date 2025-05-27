@@ -24,7 +24,7 @@ const SocialMediaContainer = () => {
         <p className="modified-pos">LinkedIn</p>
       </li>
       <li>
-        <a href="Resume.pdf">
+        <a href="resume.pdf">
           <FontAwesomeIcon icon={faFile} size="1x"></FontAwesomeIcon>
         </a>
         <p className="modified-pos">Resume</p>
